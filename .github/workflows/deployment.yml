@@ -1,0 +1,28 @@
+name: Deployment
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment: production
+    steps:
+      - run: echo "deploying to PlayStore"
+  increase-to-20:
+    runs-on: ubuntu-latest
+    environment: production
+    steps:
+        - run: echo "increasing rollout to 20%"
+  increase-to-50:
+    runs-on: ubuntu-latest
+    environment: production
+    steps:
+      - run: echo "increasing rollout to 50%"
+  increase-to-100:
+    runs-on: ubuntu-latest
+    environment: production
+    steps:
+      - run: echo "increasing rollout to 100%"
