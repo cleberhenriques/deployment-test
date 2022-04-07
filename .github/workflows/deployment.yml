@@ -12,16 +12,16 @@ jobs:
       - run: echo "deploying to PlayStore"
   increase-to-20:
     runs-on: ubuntu-latest
-    environment: production
+    environment: staged-20
     steps:
         - run: echo "increasing rollout to 20%"
   increase-to-50:
     runs-on: ubuntu-latest
-    environment: production
+    environment: staged-50
     steps:
       - run: echo "increasing rollout to 50%"
   increase-to-100:
     runs-on: ubuntu-latest
-    environment: production
+    environment: staged-100
     steps:
       - run: echo "increasing rollout to 100%"
