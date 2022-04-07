@@ -8,7 +8,6 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    environment: production
     steps:
       - run: echo "deploying to PlayStore"
   increase-to-20:
